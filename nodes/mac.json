@@ -1,0 +1,20 @@
+{
+  "user": {
+    "name":  "hamaco",
+    "group": "staff",
+    "home":  "/Users/hamaco"
+  },
+  "run_list": [
+    "recipe[mac_os_x]",
+    "recipe[mac_os_x::settings]",
+    "recipe[dmg]",
+    "recipe[homebrew]",
+
+    "recipe[mac::default]",
+    "recipe[macapps::default]",
+    "recipe[brew::default]",
+    "recipe[dotfiles::default]",
+
+    "recipe[mikutter::default]"
+  ]
+}
