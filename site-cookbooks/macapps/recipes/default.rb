@@ -66,6 +66,13 @@ dmg_package "Skype" do
   action :install
 end
 
+dmg_package "Vagrant" do
+  source "http://files.vagrantup.com/packages/f5ece47c510e5a632adb69701b78cb6dcbe03713/Vagrant-1.2.0.dmg"
+  checksum "2ad615a46fadea9fb6fa8b2dfc33b8fe"
+  type "pkg"
+  action :install
+end
+
 
 zip_package "1Password" do
   source "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.20.zip"
