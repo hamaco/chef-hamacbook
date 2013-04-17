@@ -17,7 +17,7 @@ $ rake init
 以下のコマンドで chef-solo が実行される。
 
 ```
-$ rake setup:mac
+$ sudo rake setup:mac
 ```
 
 
@@ -27,3 +27,4 @@ TODO
 - zip_package がインストール済みでも zip ファイルのダウンロードをしてしまう
 - rbenv が先か chef が先かの矛盾状態どうにかしたい
 - php-nabe とか現在自作シェルスクリプトでやってるやつを移植
+- Vagrant が /Applications/Vagrant ディレクトリ作るだけなので毎回インストールが走ってしまう
