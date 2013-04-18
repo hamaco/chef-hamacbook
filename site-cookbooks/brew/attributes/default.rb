@@ -3,6 +3,7 @@ emacs
 
 git-flow
 tig
+mercurial
 
 tree
 
