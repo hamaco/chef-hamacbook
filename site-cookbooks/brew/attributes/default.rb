@@ -9,6 +9,7 @@ tree
 
 lv
 nkf
+the_silver_searcher
 
 w3m
 wget
