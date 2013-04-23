@@ -29,6 +29,12 @@ node.default["mac_os_x"]["settings"]["screensaver"] = {
   "askForPasswordDelay" => 0, # ScreenSaverになった直後にパスワードロック
 }
 
+node.default["mac_os_x"]["settings"]["Preview"] = {
+  "domain" => "com.apple.Preview",
+
+  "PVImageOpeningMode" => 1, # ファイルを開く時にファイルのグループを同じウィンドウで開く
+}
+
 node.default["mac_os_x"]["settings"]["NSGlobalDomain"] = {
   "domain" => "NSGlobalDomain",
 
