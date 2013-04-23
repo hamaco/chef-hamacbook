@@ -19,8 +19,8 @@ bash "setup-dotfiles" do
   group node["user"]["group"]
   environment "HOME" => node["user"]["home"]
 
-  code <<-EOH
+  code <<-EOC
     cd #{dotfiles_path}
     make cui
-  EOH
+  EOC
 end
