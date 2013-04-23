@@ -70,6 +70,7 @@ dmg_package "Vagrant" do
   source "http://files.vagrantup.com/packages/a7853fe7b7f08dbedbc934eb9230d33be6bf746f/Vagrant-1.2.1.dmg"
   checksum "cfbd33c7f2ae47a884b3b99fc90e20b9"
   type "pkg"
+  package_id "com.vagrant.vagrant"
   action :install
 end
 
