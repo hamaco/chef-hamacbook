@@ -115,8 +115,8 @@ zip_package "iTerm" do
 end
 
 zip_package "Kobito" do
-  source "http://kobito.qiita.com/download/Kobito_v1.2.0.zip"
-  checksum "753861da1bd0f9cfeaff394ac9db1ad7"
+  source "http://kobito.qiita.com/download/Kobito_v1.4.0.zip"
+  checksum "6f8b7245bd0a65a9735a1190d52cf459"
 end
 
 zip_package "SimpleCap" do
