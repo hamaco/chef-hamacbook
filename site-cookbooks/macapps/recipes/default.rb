@@ -66,6 +66,13 @@ dmg_package "Skype" do
   action :install
 end
 
+dmg_package "VirtualBox" do
+  source "http://dlc.sun.com.edgesuite.net/virtualbox/4.2.12/VirtualBox-4.2.12-84980-OSX.dmg"
+  checksum "c850b3c552c51cc6467c4dc6d11ed28b"
+  type "pkg"
+  action :install
+end
+
 dmg_package "Vagrant" do
   source "http://files.vagrantup.com/packages/a7853fe7b7f08dbedbc934eb9230d33be6bf746f/Vagrant-1.2.1.dmg"
   checksum "cfbd33c7f2ae47a884b3b99fc90e20b9"
@@ -75,58 +82,57 @@ dmg_package "Vagrant" do
 end
 
 
-zip_package "1Password" do
-  source "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.20.zip"
-  checksum "3920778e7282a1a9a06bbf045e82d678"
-end
-
-zip_package "AppCleaner" do
-  source "http://www.freemacsoft.net/downloads/AppCleaner_2.1.zip"
-  checksum "8be8c917e4470e12037004c4b5c29194"
-end
-
-zip_package "BetterTouchTool" do
-  source "http://www.boastr.de/BetterTouchTool.zip"
-  checksum "42d420118bacefd48fcf6b5a7fad25fd"
-end
-
-zip_package "Divvy" do
-  source "http://mizage.com/downloads/Divvy.zip"
-  checksum "42a5b5a8215576ef0d0c77df9b3e7618"
-end
-
-zip_package "Eggscellent" do
-  source "https://s3.amazonaws.com/eggscellent/betas/Eggscellent_Beta2.zip"
-  checksum "725fcc10ae95258a74abbff4f55d62f2"
-end
-
-zip_package "HyperSwitch" do
-  source "http://bahoom.com/hyperswitch/HyperSwitch.zip"
-  checksum "09dc858140d943aeb1e2a4150928ef5b"
-end
-
-zip_package "iStat Menus" do
-  source "http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.05.zip"
-  checksum "24f127eb0083c8d02119f8b4c0247cbb"
-end
-
-zip_package "iTerm" do
-  source "http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130319.zip"
-  checksum "60f2439f871ccc62df14bd968c897688"
-end
-
-zip_package "Kobito" do
-  source "http://kobito.qiita.com/download/Kobito_v1.4.0.zip"
-  checksum "6f8b7245bd0a65a9735a1190d52cf459"
-end
-
-zip_package "SimpleCap" do
-  source "http://xcatsan.com/simplecap/download/SimpleCap-1.2.1.zip"
-  checksum "6f07f901389ddb4fecff3d22de860c29"
-end
-
-zip_package "Transmit" do
-  source "http://www.panic.com/transmit/d/Transmit%204.3.3.zip"
-  checksum "d72e612e0bb0e624405a3c48195995e3"
-end
-
+# zip_package "1Password" do
+#   source "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.20.zip"
+#   checksum "3920778e7282a1a9a06bbf045e82d678"
+# end
+# 
+# zip_package "AppCleaner" do
+#   source "http://www.freemacsoft.net/downloads/AppCleaner_2.1.zip"
+#   checksum "8be8c917e4470e12037004c4b5c29194"
+# end
+# 
+# zip_package "BetterTouchTool" do
+#   source "http://www.boastr.de/BetterTouchTool.zip"
+#   checksum "42d420118bacefd48fcf6b5a7fad25fd"
+# end
+# 
+# zip_package "Divvy" do
+#   source "http://mizage.com/downloads/Divvy.zip"
+#   checksum "42a5b5a8215576ef0d0c77df9b3e7618"
+# end
+# 
+# zip_package "Eggscellent" do
+#   source "https://s3.amazonaws.com/eggscellent/betas/Eggscellent_Beta2.zip"
+#   checksum "725fcc10ae95258a74abbff4f55d62f2"
+# end
+# 
+# zip_package "HyperSwitch" do
+#   source "http://bahoom.com/hyperswitch/HyperSwitch.zip"
+#   checksum "09dc858140d943aeb1e2a4150928ef5b"
+# end
+# 
+# zip_package "iStat Menus" do
+#   source "http://s3.amazonaws.com/bjango/files/istatmenus4/istatmenus4.05.zip"
+#   checksum "24f127eb0083c8d02119f8b4c0247cbb"
+# end
+# 
+# zip_package "iTerm" do
+#   source "http://iterm2.googlecode.com/files/iTerm2-1_0_0_20130319.zip"
+#   checksum "60f2439f871ccc62df14bd968c897688"
+# end
+# 
+# zip_package "Kobito" do
+#   source "http://kobito.qiita.com/download/Kobito_v1.4.0.zip"
+#   checksum "6f8b7245bd0a65a9735a1190d52cf459"
+# end
+# 
+# zip_package "SimpleCap" do
+#   source "http://xcatsan.com/simplecap/download/SimpleCap-1.2.1.zip"
+#   checksum "6f07f901389ddb4fecff3d22de860c29"
+# end
+# 
+# zip_package "Transmit" do
+#   source "http://www.panic.com/transmit/d/Transmit%204.3.3.zip"
+#   checksum "d72e612e0bb0e624405a3c48195995e3"
+# end
