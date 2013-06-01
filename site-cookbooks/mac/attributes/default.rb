@@ -18,7 +18,7 @@ node.default["mac_os_x"]["settings"]["finder"] = {
   "QLEnableTextSelection" => true,   # QuickLookで文字を選択できるようにする
   "NSSystemFont  " => "nukamiso",    # Finderのフォントを設定
   "NSTitleBarFont" => "nukamiso",    # タイトルバーのフォント
-  "NSToolTipsFont" => "nukamiso",    # ツールチプのフォント
+  "NSToolTipsFont" => "nukamiso",    # ツールチップのフォント
   "_FXShowPosixPathInTitle" => true, #
 }
 
@@ -44,5 +44,5 @@ node.default["mac_os_x"]["settings"]["NSGlobalDomain"] = {
 node.default["mac_os_x"]["settings"]["Yorufukurou"] = {
   "domain" => "com.YoruFukurouProject.YoruFukurou",
 
-  "TweetFontName" => "nukamiso",
+  "TweetFontName" => "07やさしさゴシック",
 }
