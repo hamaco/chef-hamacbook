@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 node.default["mac_os_x"]["settings"]["dock"] = {
   "domain" => "com.apple.dock",
 
@@ -20,6 +21,12 @@ node.default["mac_os_x"]["settings"]["finder"] = {
   "NSTitleBarFont" => "nukamiso",    # タイトルバーのフォント
   "NSToolTipsFont" => "nukamiso",    # ツールチップのフォント
   "_FXShowPosixPathInTitle" => true, #
+}
+
+node.default["mac_os_x"]["settings"]["desktopservices"] = {
+  "domain" => "com.apple.desktopservices",
+
+  "DSDontWriteNetworkStores" => true, # ネットワーク上には.DS_Storeを作らない
 }
 
 node.default["mac_os_x"]["settings"]["screensaver"] = {
