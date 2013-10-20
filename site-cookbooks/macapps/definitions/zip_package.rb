@@ -3,6 +3,8 @@ define :zip_package do
     source "#{params[:source]}"
     checksum "#{params[:checksum]}"
     action :create_if_missing
+
+    not_if { ::File.directory?("/Applications/#{params[:name]}.app") }
   end
 
   execute "unzip #{params[:name]}" do
