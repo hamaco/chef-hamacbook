@@ -6,21 +6,24 @@ directory node["user"]["home"] + "/config" do
   mode 0755
 end
 
-git dotfiles_path do
+bash "clone dotfiles" do
   user node["user"]["name"]
   group node["user"]["group"]
-  repository "git://github.com/hamaco/dotfiles.git"
-  reference "master"
-  action :sync
+
+  code <<-EOC
+    git clone git://github.com/hamaco/dotfiles.git #{dotfiles_path}
+  EOC
+
+  not_if { ::File.exist? dotfiles_path }
 end
 
-bash "setup-dotfiles" do
+bash "setup dotfiles" do
   user node["user"]["name"]
   group node["user"]["group"]
   environment "HOME" => node["user"]["home"]
 
   code <<-EOC
     cd #{dotfiles_path}
-    make cui
+    make cui mac
   EOC
 end
