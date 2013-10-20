@@ -1,11 +1,11 @@
-include_recipe 'homebrew'
+include_recipe "homebrew"
 
 execute "cleanup homebrew" do
   command "/usr/local/bin/brew cleanup || true"
 end
 
-node['brew']['packages'].each do |pkg|
+node["brew"]["packages"].each do |pkg|
   package pkg do
-    action [:install, :upgrade]
+    action :install
   end
 end
