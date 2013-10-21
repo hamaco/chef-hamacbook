@@ -1,5 +1,18 @@
 include_recipe "dmg"
 
+# dmg_package "AquaSKK" do
+#   source "http://osdn.dl.sourceforge.jp/aquaskk/58814/AquaSKK-4.2.dmg"
+#   type "pkg"
+#   action :install
+# end
+
+dmg_package "KeyRemap4MacBook" do
+  source "https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-8.4.0.dmg"
+  volumes_dir "KeyRemap4MacBook-8.4.0"
+  type "pkg"
+  action :install
+end
+
 dmg_package "ClipMenu" do
   source "https://dl.dropboxusercontent.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg"
   # checksum "6475d0cc95fdbed9f5a08c7d49adb02b"
@@ -129,4 +142,8 @@ end
 zip_package "Transmit" do
   source "http://www.panic.com/transmit/d/Transmit%204.4.3.zip"
   # checksum "d72e612e0bb0e624405a3c48195995e3"
+end
+
+zip_package "Alfred 2" do
+  source "http://cachefly.alfredapp.com/Alfred_2.0.9_214.zip"
 end
