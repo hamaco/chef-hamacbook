@@ -5,16 +5,14 @@
     "home":  "/Users/hamaco"
   },
   "run_list": [
-    "recipe[mac_os_x]",
     "recipe[mac_os_x::settings]",
-    "recipe[dmg]",
-    "recipe[homebrew]",
 
-    "recipe[mac::default]",
-    "recipe[macapps::default]",
+    "recipe[dmg]",
     "recipe[brew::default]",
     "recipe[dotfiles::default]",
+    "recipe[mac::default]",
+    "recipe[macapps::default]",
 
-    "recipe[mikutter::default]"
+    "recipe[keyremap4macbook::default]"
   ]
 }
