@@ -7,97 +7,19 @@ include_recipe "dmg"
 #   action :install
 # end
 
-dmg_package "KeyRemap4MacBook" do
-  source "https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-8.4.0.dmg"
-  volumes_dir "KeyRemap4MacBook-8.4.0"
-  type "pkg"
-  action :install
-end
+include_recipe "macapps::keyremap4macbook"
+include_recipe "macapps::clipmenu"
+include_recipe "macapps::slate"
+include_recipe "macapps::dropbox"
+include_recipe "macapps::firefox"
+include_recipe "macapps::chrome"
+include_recipe "macapps::chrome_canary"
+include_recipe "macapps::omnifocus"
+include_recipe "macapps::sequel_pro"
+include_recipe "macapps::skype"
+include_recipe "macapps::virtualbox"
+include_recipe "macapps::vagrant"
 
-dmg_package "ClipMenu" do
-  source "https://dl.dropboxusercontent.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg"
-  # checksum "6475d0cc95fdbed9f5a08c7d49adb02b"
-  action :install
-end
-
-dmg_package "Slate" do
-  source "http://slate.ninjamonkeysoftware.com/Slate.dmg"
-  action :install
-end
-
-# dmg_package "DaisyDisk" do
-#   volumes_dir "DaisyDisk 2"
-#   source "http://daisydiskapp.com/downloads/DaisyDisk.dmg"
-#   # checksum "9c5e4e5235b0b25b6be355542c6bf96e"
-#   action :install
-# end
-
-dmg_package "Dropbox" do
-  volumes_dir "Dropbox Installer"
-  source "https://d1ilhw0800yew8.cloudfront.net/client/Dropbox%202.4.3.dmg"
-  # checksum "910e9117fdda037736346efcc39c708c"
-  action :install
-end
-
-dmg_package "Firefox" do
-  source "http://download-installer.cdn.mozilla.net/pub/mozilla.org/firefox/releases/24.0/mac/ja-JP-mac/Firefox%2024.0.dmg"
-  # checksum "a4f6bad73ac46e1a5e34918be6630411"
-  action :install
-end
-
-dmg_package "Google Chrome" do
-  dmg_name "googlechrome"
-  source "https://dl-ssl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
-  # checksum "fadd3864ae1ffab81eaaacf9d7875cda"
-  action :install
-end
-
-dmg_package "Google Chrome Canary" do
-  # dmg_name ""
-  source "https://storage.googleapis.com/chrome-canary/GoogleChromeCanary.dmg"
-  action :install
-end
-
-dmg_package "OmniFocus" do
-  source "http://downloads2.omnigroup.com/software/MacOSX/10.6/OmniFocus-1.10.4.dmg"
-  # checksum "773ff5b37e415847685931c253e5384a"
-  accept_eula true
-  action :install
-end
-
-# dmg_package "PhpStorm" do
-#   source "http://download-ln.jetbrains.com/webide/PhpStorm-6.0.dmg"
-#   # checksum "5c3779490a535e3a61c8d88c29cdd2eb"
-#   action :install
-# end
-
-dmg_package "Sequel Pro" do
-  volumes_dir "Sequel Pro 1.0.2"
-  source "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg"
-  # checksum "eec1c05f4dd08acaf8ab409ebdad1fda"
-  action :install
-end
-
-dmg_package "Skype" do
-  source "http://download.skype.com/macosx/Skype_6.3.60.602.dmg"
-  # checksum "475ab2afb68618a57d3a43104139eb22"
-  action :install
-end
-
-dmg_package "VirtualBox" do
-  source "http://download.virtualbox.org/virtualbox/4.3.0/VirtualBox-4.3.0-89960-OSX.dmg"
-  # checksum "c850b3c552c51cc6467c4dc6d11ed28b"
-  type "pkg"
-  action :install
-end
-
-dmg_package "Vagrant" do
-  source "http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg"
-  # checksum "cfbd33c7f2ae47a884b3b99fc90e20b9"
-  type "pkg"
-  package_id "com.vagrant.vagrant"
-  action :install
-end
 
 
 zip_package "1Password 4" do
