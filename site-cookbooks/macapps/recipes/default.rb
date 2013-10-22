@@ -1,5 +1,6 @@
 include_recipe "dmg"
 
+# TODO: AquaSKKってどうやってインストール済みかチェックするの?
 # dmg_package "AquaSKK" do
 #   source "http://osdn.dl.sourceforge.jp/aquaskk/58814/AquaSKK-4.2.dmg"
 #   type "pkg"
