@@ -19,6 +19,7 @@ include_recipe "macapps::sequel_pro"
 include_recipe "macapps::skype"
 include_recipe "macapps::virtualbox"
 include_recipe "macapps::vagrant"
+include_recipe "macapps::sourcetree"
 
 include_recipe "macapps::1password"
 include_recipe "macapps::kobito"
