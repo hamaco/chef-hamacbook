@@ -6,6 +6,13 @@ Chefを使って普段自分が使っているMac環境を一発で整えたい�
 セットアップ
 ------------
 
+chefが必要なので以下のコマンドでchefをインストールしてください。
+chef 11になったおかげでruby+chefが先かcookbook実行が先か問題に終止符が打たれた！
+
+```
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+```
+
 必要なパッケージは以下のコマンド実行すれば入るはず。
 
 ```
