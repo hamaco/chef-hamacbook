@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+RBENV_ROOT=<%= node["user"]["home"] %>/app/rbenv
+
+export RBENV_ROOT
+PATH=$RBENV_ROOT/bin:$PATH
+if [ -n "$ZSH_VERSION" ]; then
+  eval "$(rbenv init - zsh)"
+else
+  eval "$(rbenv init -)"
+fi

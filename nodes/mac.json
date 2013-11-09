@@ -5,6 +5,9 @@
     "email": "hamanaka.kazuhiro@gmail.com",
     "home":  "/Users/hamaco"
   },
+  "php-nabe": {
+    "user_home_root": "/Users"
+  },
   "run_list": [
     "recipe[mac_os_x::settings]",
 
@@ -14,6 +17,11 @@
     "recipe[mac::default]",
     "recipe[macapps::default]",
 
-    "recipe[keyremap4macbook::default]"
+    "recipe[keyremap4macbook::default]",
+
+    "recipe[php_nabe]",
+
+    "recipe[hamaco::ruby]",
+    "recipe[hamaco::php]"
   ]
 }
