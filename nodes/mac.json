@@ -2,6 +2,7 @@
   "user": {
     "name":  "hamaco",
     "group": "staff",
+    "email": "hamanaka.kazuhiro@gmail.com",
     "home":  "/Users/hamaco"
   },
   "run_list": [

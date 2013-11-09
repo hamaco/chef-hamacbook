@@ -27,3 +27,10 @@ bash "setup dotfiles" do
     make cui mac
   EOC
 end
+
+template "#{node['user']['home']}/.gitconfig.local" do
+  source "gitconfig.local.erb"
+  owner node["user"]["name"]
+  group node["user"]["group"]
+  mode "0644"
+end
