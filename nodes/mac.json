@@ -15,12 +15,13 @@
     "recipe[brew::default]",
     "recipe[dotfiles::default]",
     "recipe[mac::default]",
-    "recipe[macapps::default]",
+    "recipe[macapps]",
 
     "recipe[keyremap4macbook::default]",
 
     "recipe[php_nabe]",
 
+    "recipe[hamaco::macapps]",
     "recipe[hamaco::ruby]",
     "recipe[hamaco::php]"
   ]
