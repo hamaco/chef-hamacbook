@@ -14,6 +14,7 @@ the_silver_searcher
 w3m
 wget
 
+keychain
 ssh-copy-id
 mobile-shell
 
