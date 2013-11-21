@@ -33,4 +33,5 @@ template "#{node['user']['home']}/.gitconfig.local" do
   owner node["user"]["name"]
   group node["user"]["group"]
   mode "0644"
+  action :create_if_missing
 end
