@@ -6,6 +6,13 @@ git "rbenv" do
   action :sync
 end
 
+directory "#{node['user']['home']}/app/rbenv/plugins" do
+  owner node["user"]["name"]
+  group node["user"]["group"]
+  mode "0755"
+  action :create
+end
+
 git "ruby-build" do
   user node["user"]["name"]
   repository "git://github.com/sstephenson/ruby-build.git"
