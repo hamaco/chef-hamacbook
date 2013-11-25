@@ -23,5 +23,4 @@ tmux
 reattach-to-user-namespace
 
 jq
-
 )
