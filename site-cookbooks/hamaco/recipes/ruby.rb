@@ -51,7 +51,7 @@ bash "rbenv install ruby-1.9.3-p448" do
   not_if { Dir.exists?("#{node['user']['home']}/app/rbenv/versions/1.9.3-p448") }
 end
 
-bash "rbenv global 1.9.3-p448" do
+bash "rbenv global 2.0.0-p247" do
   user node["user"]["name"]
   environment "RBENV_ROOT" => "#{node['user']['home']}/app/rbenv"
 
@@ -59,5 +59,19 @@ bash "rbenv global 1.9.3-p448" do
     source $RBENV_ROOT/zshenv
     rbenv global 2.0.0-p247
     rbenv rehash 2.0.0-p247
+  EOH
+end
+
+bash "rbenv rubygems" do
+  user node["user"]["name"]
+  environment "RBENV_ROOT" => "#{node['user']['home']}/app/rbenv"
+
+  code <<-EOH
+    source $RBENV_ROOT/zshenv
+
+    gem i iconv
+    gem i bundler --pre
+
+    gem i ghn
   EOH
 end
