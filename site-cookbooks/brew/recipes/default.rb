@@ -5,7 +5,7 @@ execute "cleanup homebrew" do
 end
 
 package "macvim" do
-  options "--HEAD --with-cscope --with-lua --with-luajit"
+  options "--HEAD --with-cscope --with-lua --with-luajit --override-system-vim"
   action :install
 end
 
