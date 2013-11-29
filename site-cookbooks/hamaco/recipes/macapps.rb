@@ -5,6 +5,7 @@
 #   action :install
 # end
 
+include_recipe "macapps::pckeyboardhack"
 include_recipe "macapps::keyremap4macbook"
 include_recipe "macapps::clipmenu"
 include_recipe "macapps::slate"
