@@ -1,5 +1,5 @@
 bash "kr4mb" do
-  user node["user"]["name"]
+  user  node["user"]["name"]
   group node["user"]["group"]
   environment "HOME" => node["user"]["home"]
 
@@ -23,7 +23,7 @@ keyremap4macbook_remap "remap.spaces_special"
 keyremap4macbook_remap "option.extra_cursor_optionL_kjhl"
 
 keyremap4macbook_set "repeat.initial_wait" do
-  value 200
+  value 100
 end
 keyremap4macbook_set "repeat.wait" do
   value 15
@@ -33,7 +33,4 @@ keyremap4macbook_set "repeat.consumer_initial_wait" do
 end
 keyremap4macbook_set "repeat.consumer_wait" do
   value 75
-end
-keyremap4macbook_set "repeat.wait" do
-  value 30
 end
