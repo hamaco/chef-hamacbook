@@ -6,7 +6,8 @@
   end
 
   %w{ mbstring mysql curl xdebug }.each do |extension|
-    php_nabe_extension extension do
+    php_nabe_extension "PHP#{version}-#{extension}" do
+      extension extension
       version version
       user node["user"]["name"]
       action :install
