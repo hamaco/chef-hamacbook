@@ -37,6 +37,11 @@ execute "enable-mysql" do
   not_if "launchctl list | grep homebrew.mxcl.mysql"
 end
 
+homebrew_tap 'homebrew/binary'
+package "packer" do
+  action :install
+end
+
 
 node["brew"]["packages"].each do |pkg|
   package pkg do
