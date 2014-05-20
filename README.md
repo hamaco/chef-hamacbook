@@ -10,7 +10,7 @@ chefが必要なので以下のコマンドでchefをインストールしてく
 chef 11になったおかげでruby+chefが先かcookbook実行が先か問題に終止符が打たれた！
 
 ```
-curl -L https://www.opscode.com/chef/install.sh | sudo bash
+curl -sL https://www.opscode.com/chef/install.sh | sudo bash
 ```
 
 
