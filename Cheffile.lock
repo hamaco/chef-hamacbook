@@ -5,8 +5,16 @@ SITE
     homebrew (1.3.2)
     mac_os_x (1.4.2)
 
+GIT
+  remote: https://github.com/hamaco-cookbooks/php_nabe.git
+  ref: master
+  sha: 6443d328aaa82f9d6d43413af40dd49d3ad424bc
+  specs:
+    php_nabe (0.1.0)
+
 DEPENDENCIES
   dmg (>= 0)
   homebrew (>= 0)
   mac_os_x (>= 0)
+  php_nabe (>= 0)
 

@@ -1,5 +1,7 @@
-site 'http://community.opscode.com/api/v1'
+site "http://community.opscode.com/api/v1"
 
-cookbook 'homebrew'
-cookbook 'mac_os_x'
-cookbook 'dmg'
+cookbook "homebrew"
+cookbook "mac_os_x"
+cookbook "dmg"
+
+cookbook "php_nabe", :git => "https://github.com/hamaco-cookbooks/php_nabe.git"
