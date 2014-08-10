@@ -10,6 +10,13 @@
   },
   "run_list": [
     "recipe[mac_os_x::settings]",
+    "recipe[dmg]",
+    "recipe[brew::default]",
+    "recipe[mac::default]",
+    "recipe[karabiner::default]"
+  ],
+  "run_list2": [
+    "recipe[mac_os_x::settings]",
 
     "recipe[dmg]",
     "recipe[brew::default]",
@@ -17,7 +24,7 @@
     "recipe[mac::default]",
     "recipe[macapps]",
 
-    "recipe[keyremap4macbook::default]",
+    "recipe[karabiner::default]",
 
     "recipe[php_nabe]",
 
