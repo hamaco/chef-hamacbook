@@ -24,7 +24,7 @@ bash "setup dotfiles" do
 
   code <<-EOC
     cd #{dotfiles_path}
-    make cui mac
+    make mac
   EOC
 end
 
