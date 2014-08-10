@@ -4,6 +4,8 @@ bash "kr4mb" do
   environment "HOME" => node["user"]["home"]
 
   code <<-EOC
+    mkdir "$HOME/Libraby/Application Support/Karabiner/private.xml"
+    ln -s $HOME/Dropbox/data/mac/Karabiner/private.xml "$HOME/Libraby/Application Support/Karabiner/private.xml"
     defaults write org.pqrs.Karabiner isStatusbarEnable -bool false
   EOC
 end
