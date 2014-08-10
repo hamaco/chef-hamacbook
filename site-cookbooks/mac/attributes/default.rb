@@ -5,6 +5,7 @@ node.default["mac_os_x"]["settings"]["dock"] = {
   "autohide-delay" => 0,                 # Dockの表示・非表示の待ち時間をなくす
   "expose-animation-duration" => 0.12,   # Mission Controlのアニメーション速度変更 (0.12が最速)
   "tilesize" => 16,                      # Dockアイコンの通常表示サイズ
+  "magnification" => true,               # Dockにカーソルを合わせると拡大する
   "largesize" => 128,                    # Dockアイコンの拡大表示サイズ
   "orientation" => "left",               # Dockを左側に寄せる
   "autohide" => true,                    # Dockを自動的に隠す
