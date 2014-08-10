@@ -22,13 +22,11 @@
     "recipe[brew::default]",
     "recipe[dotfiles::default]",
     "recipe[mac::default]",
-    "recipe[macapps]",
 
     "recipe[karabiner::default]",
 
     "recipe[php_nabe]",
 
-    "recipe[hamaco::macapps]",
     "recipe[hamaco::ruby]",
     "recipe[hamaco::php]"
   ]
