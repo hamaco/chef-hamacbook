@@ -17,6 +17,11 @@ node.default["mac_os_x"]["settings"]["dock"] = {
   "dashboard-in-overlay" => true,        # Dashboardを操作スペースとして表示しない
   "expose-group-by-app" => false,        # ウィンドウをアプリケーションごとにグループ化しない
   "mru-spaces" => false,                 # 操作スペースの自動並び替えをしない
+
+  "wvous-bl-corner" => 2,                # カーソルを左下に移動でMission Control
+  "wvous-bl-modifier" => 0,              #
+  "wvous-tr-corner" => 4,                # カーソルを右上に移動でDesktop
+  "wvous-tr-modifier" => 0,              #
 }
 
 node.default["mac_os_x"]["settings"]["finder"] = {
