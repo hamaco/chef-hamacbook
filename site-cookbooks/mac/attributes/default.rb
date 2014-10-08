@@ -1,27 +1,41 @@
 # -*- coding: utf-8 -*-
+node.default["mac_os_x"]["settings"]["NSGlobalDomain"] = {
+  "domain" => "NSGlobalDomain",
+
+  "AppleEnableMenuBarTransparency"        => false, # 透明化メニューバーの無効化
+  "WebAutomaticTextReplacementEnabled"    => false, # テキストの自動置換無効化
+  "NSAutomaticSpellingCorrectionEnabled"  => false, # スペルの自修正管無効化
+  "NSAutomaticDashSubstitutionEnabled"    => false, # ダブルクオートの自動変換無効化
+  "NSAutomaticQuoteSubstitutionEnabled"   => false, # シングルクオートの自動変換無効化
+  "WebAutomaticSpellingCorrectionEnabled" => false, # スペルの自修正管無効化
+
+  "com.apple.keyboard.fnState" => true, # Fnキーを普通のキーとして使う
+}
+
+
 node.default["mac_os_x"]["settings"]["dock"] = {
   "domain" => "com.apple.dock",
 
-  "autohide-delay" => 0,                 # Dockの表示・非表示の待ち時間をなくす
+  "autohide-delay"            => 0,      # Dockの表示・非表示の待ち時間をなくす
   "expose-animation-duration" => 0.12,   # Mission Controlのアニメーション速度変更 (0.12が最速)
-  "tilesize" => 16,                      # Dockアイコンの通常表示サイズ
-  "magnification" => true,               # Dockにカーソルを合わせると拡大する
-  "largesize" => 128,                    # Dockアイコンの拡大表示サイズ
-  "orientation" => "left",               # Dockを左側に寄せる
-  "autohide" => true,                    # Dockを自動的に隠す
-  "mineffect" => "suck",                 # Dockにウィンドウをしまう時の隠しエフェクト
-  "launchanim" => true,                  # 起動中のアプリをアニメーション表示
-  "show-process-indicators" => true,     # 起動しているアプリにインジケータ・ランプ表示
+  "tilesize"                  => 16,     # Dockアイコンの通常表示サイズ
+  "magnification"             => true,   # Dockにカーソルを合わせると拡大する
+  "largesize"                 => 128,    # Dockアイコンの拡大表示サイズ
+  "orientation"               => "left", # Dockを左側に寄せる
+  "autohide"                  => true,   # Dockを自動的に隠す
+  "mineffect"                 => "suck", # Dockにウィンドウをしまう時の隠しエフェクト
+  "launchanim"                => true,   # 起動中のアプリをアニメーション表示
+  "show-process-indicators"   => true,   # 起動しているアプリにインジケータ・ランプ表示
 
   "showAppExposeGestureEnabled" => true, # 4本指スワイプでExpose
 
   "dashboard-in-overlay" => true,        # Dashboardを操作スペースとして表示しない
-  "expose-group-by-app" => false,        # ウィンドウをアプリケーションごとにグループ化しない
-  "mru-spaces" => false,                 # 操作スペースの自動並び替えをしない
+  "expose-group-by-app"  => false,       # ウィンドウをアプリケーションごとにグループ化しない
+  "mru-spaces"           => false,       # 操作スペースの自動並び替えをしない
 
-  "wvous-bl-corner" => 2,                # カーソルを左下に移動でMission Control
+  "wvous-bl-corner"   => 2,              # カーソルを左下に移動でMission Control
   "wvous-bl-modifier" => 0,              #
-  "wvous-tr-corner" => 4,                # カーソルを右上に移動でDesktop
+  "wvous-tr-corner"   => 4,              # カーソルを右上に移動でDesktop
   "wvous-tr-modifier" => 0,              #
 }
 
@@ -64,19 +78,8 @@ node.default["mac_os_x"]["settings"]["Preview"] = {
   "PVImageOpeningMode" => 1, # ファイルを開く時にファイルのグループを同じウィンドウで開く
 }
 
-node.default["mac_os_x"]["settings"]["NSGlobalDomain"] = {
-  "domain" => "NSGlobalDomain",
-
-  "AppleEnableMenuBarTransparency" => false, # 透明化メニューバーの無効化
-  "WebAutomaticTextReplacementEnabled" => false, # テキストの自動置換無効化
-  "NSAutomaticSpellingCorrectionEnabled" => false, # スペルの自修正管無効化
-  "WebAutomaticSpellingCorrectionEnabled" => false, # スペルの自修正管無効化
-
-  "com.apple.keyboard.fnState" => true, # Fnキーを普通のキーとして使う
-}
-
 node.default["mac_os_x"]["settings"]["Yorufukurou"] = {
   "domain" => "com.YoruFukurouProject.YoruFukurou",
 
-  "TweetFontName" => "07やさしさゴシック",
+  "TweetFontName" => "りいポップ角",
 }
