@@ -19,8 +19,12 @@ keychain
 ssh-copy-id
 mobile-shell
 
+terminal-notifier
 tmux
 reattach-to-user-namespace
 
+httpie
 jq
+
+go
 )
