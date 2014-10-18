@@ -4,10 +4,10 @@ execute "cleanup homebrew" do
   command "/usr/local/bin/brew cleanup || true"
 end
 
-package "macvim" do
-  options "--HEAD --with-cscope --with-lua --with-luajit --override-system-vim"
-  action :install
-end
+# package "macvim" do
+#   options "--HEAD --with-cscope --with-lua --with-luajit --override-system-vim"
+#   action :install
+# end
 
 
 package "zsh" do
