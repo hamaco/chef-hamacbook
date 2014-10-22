@@ -10,13 +10,14 @@
   },
   "run_list": [
     "recipe[mac_os_x::settings]",
-    "recipe[dmg]",
-    "recipe[brew::default]",
     "recipe[mac::default]",
+
+    "recipe[brew::default]",
+    "recipe[dotfiles::default]",
+
     "recipe[karabiner::default]"
   ],
   "run_list2": [
-    "recipe[dotfiles::default]",
     "recipe[php_nabe]",
     "recipe[hamaco::ruby]",
     "recipe[hamaco::php]"
