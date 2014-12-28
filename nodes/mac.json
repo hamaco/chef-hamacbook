@@ -15,7 +15,8 @@
     "recipe[brew::default]",
     "recipe[dotfiles::default]",
 
-    "recipe[karabiner::default]"
+    "recipe[karabiner::default]",
+    "recipe[seil::default]"
   ],
   "run_list2": [
     "recipe[php_nabe]",
