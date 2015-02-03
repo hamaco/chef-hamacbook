@@ -82,4 +82,52 @@ node.default["mac_os_x"]["settings"]["Yorufukurou"] = {
   "domain" => "com.YoruFukurouProject.YoruFukurou",
 
   "TweetFontName" => "りいポップ角",
+
+  "DefaultColorSetting" => 2, # リストの色を `Solarized (ライト)` にする
+}
+
+node.default["mac_os_x"]["settings"]["Slate"] = {
+  "domain" => "com.slate.Slate",
+
+  "SUEnableAutomaticChecks" => 1, # 更新版の自動チェック
+}
+
+node.default["mac_os_x"]["settings"]["AquaSKK"] = {
+  "domain" => "jp.sourceforge.inputmethod.aquaskk",
+
+  "show_input_mode_icon" => 0,                    # 入力モードアイコンを表示しない
+  "candidate_window_font_name" => "KonatuTohaba", # 候補ウィンドウのフォント
+}
+
+node.default["mac_os_x"]["settings"]["iStat Menus"] = {
+  "domain" => "com.bjango.istatmenus5.extras",
+
+  "CPU_MenubarMode"     => "0",
+  "Memory_MenubarMode"  => "6",
+  "Battery_MenubarMode" => "2,0",
+  "Time_MenubarFormat"  => [
+    "___ICON__BLUE___",
+    "HH",
+    "':'",
+    "mm",
+  ],
+  "CombinedDropdownDisplayMode" => "1,2,3,4",
+  "CombinedMenubarDisplayMode"  => "1,2",
+}
+
+node.default["mac_os_x"]["settings"]["iTerm2"] = {
+  "domain" => "com.googlecode.iterm2",
+
+  "LoadPrefsFromCustomFolder" => 1,
+  "PrefsCustomFolder"         => "#{node['user']['home']}/Dropbox/data/mac/iTerm2",
+}
+
+node.default["mac_os_x"]["settings"]["Scroll Reverser"] = {
+  "domain" => "com.pilotmoon.scroll-reverser",
+
+  "HasRunBefore"            => 1,
+  "SUHasLaunchedBefore"     => 1,
+  "SUEnableAutomaticChecks" => 0,
+  "ReverseTrackpad"         => 0,
+  "ReverseX"                => 1,
 }
