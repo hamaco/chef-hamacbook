@@ -35,6 +35,8 @@ node.default["mac_os_x"]["settings"]["dock"] = {
 
   "wvous-bl-corner"   => 2,              # カーソルを左下に移動でMission Control
   "wvous-bl-modifier" => 0,              #
+  "wvous-br-corner"   => 7,              # カーソルを右下に移動でDashboard
+  "wvous-br-modifier" => 0,              #
   "wvous-tr-corner"   => 4,              # カーソルを右上に移動でDesktop
   "wvous-tr-modifier" => 0,              #
 }
