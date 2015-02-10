@@ -3,11 +3,12 @@ node.default["mac_os_x"]["settings"]["NSGlobalDomain"] = {
   "domain" => "NSGlobalDomain",
 
   "AppleEnableMenuBarTransparency"        => false, # 透明化メニューバーの無効化
-  "WebAutomaticTextReplacementEnabled"    => false, # テキストの自動置換無効化
+  "AppleSpacesSwitchOnActivate"           => false, # Cmd+Tab で操作スペースを移動しない
   "NSAutomaticSpellingCorrectionEnabled"  => false, # スペルの自修正管無効化
   "NSAutomaticDashSubstitutionEnabled"    => false, # ダブルクオートの自動変換無効化
   "NSAutomaticQuoteSubstitutionEnabled"   => false, # シングルクオートの自動変換無効化
   "WebAutomaticSpellingCorrectionEnabled" => false, # スペルの自修正管無効化
+  "WebAutomaticTextReplacementEnabled"    => false, # テキストの自動置換無効化
 
   "com.apple.keyboard.fnState" => true, # Fnキーを普通のキーとして使う
 }
@@ -50,6 +51,14 @@ node.default["mac_os_x"]["settings"]["finder"] = {
   "NSToolTipsFont" => "nukamiso",    # ツールチップのフォント
   "_FXShowPosixPathInTitle" => true, #
 }
+
+node.default["mac_os_x"]["settings"]["Universal Access"] = {
+  "domain" => "com.apple.universalaccess",
+
+  "closeViewScrollWheelToggle"       => 1, # スクロールジェスチャでズーム
+  "closeViewScrollWheelModifiersInt" => 262144, # ズームに使用するキーを Control キーにする
+}
+
 
 node.default["mac_os_x"]["settings"]["AppleMultitouchTrackpad"] = {
   "domain" => "com.apple.AppleMultitouchTrackpad",
