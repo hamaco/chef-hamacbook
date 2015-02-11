@@ -1,9 +1,9 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    dmg (1.1.0)
-    homebrew (1.3.2)
-    mac_os_x (1.4.2)
+    dmg (2.2.2)
+    homebrew (1.9.2)
+    mac_os_x (1.4.6)
 
 GIT
   remote: https://github.com/hamaco-cookbooks/php_nabe.git
