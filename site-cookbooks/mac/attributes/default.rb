@@ -89,6 +89,14 @@ node.default["mac_os_x"]["settings"]["Preview"] = {
   "PVImageOpeningMode" => 1, # ファイルを開く時にファイルのグループを同じウィンドウで開く
 }
 
+node.default["mac_os_x"]["settings"]["safari"] = {
+  "domain" => "com.apple.Safari",
+
+  "ShowStatusBar"            => true,
+  "IncludeDevelopMenu"       => true,
+  "SendDoNotTrackHTTPHeader" => true,
+}
+
 node.default["mac_os_x"]["settings"]["Yorufukurou"] = {
   "domain" => "com.YoruFukurouProject.YoruFukurou",
 
